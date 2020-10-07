@@ -1,0 +1,18 @@
+<div class='usercount'>
+<table>
+	<thead>
+		<tr>
+			<th>User</th>
+			<th>Count</th>
+		</tr>
+	</thead>
+{% for user_details in user_counts %}
+	<tbody>
+		<tr>
+			<td>{{ user_details.author }}</td>
+			<td>{{ user_details.count }}</td>
+		</tr>
+	</tbody>
+{% endfor %}
+</table>
+</div>

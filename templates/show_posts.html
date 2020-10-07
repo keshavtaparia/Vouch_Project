@@ -1,0 +1,22 @@
+<div class='posts'>
+<table>
+	<thead>
+		<tr>
+			<th>Title</th>
+			<th>URL</th>
+			<th>Author</th>
+			<th>Upvotes</th>
+		</tr>
+	</thead>
+{% for post in posts %}
+	<tbody>
+		<tr>
+			<td>{{ post.title }}</td>
+			<td><a href="{{ post.url }}">{{ post.url }}</a></td>
+			<td>{{ post.author }}</td>
+			<td>{{ post.upvotes }}</td>
+		</tr>
+	</tbody>
+{% endfor %}
+</table>
+</div>
